@@ -813,7 +813,7 @@ def analyze(clicks,subdivision,parameter,existing_input,revised_input,variation)
     print(len(input_values))
 
 
-    API_KEY = '5iLReM2ZZVXnVRMaAcSA4rfGnInWte72CgK0PcCLkyKY'
+    API_KEY = ''
     token_response = requests.post('https://iam.cloud.ibm.com/identity/token',
                                        data={"apikey": API_KEY, "grant_type": 'urn:ibm:params:oauth:grant-type:apikey'})
     mltoken = token_response.json()["access_token"]
